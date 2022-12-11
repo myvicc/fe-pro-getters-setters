@@ -19,5 +19,49 @@ export const school = {
     5: new Student('Bohdan', [67, 25, 87, 34, 25, 76]),
     6: new Student('Eugene', [97, 34, 78, 85, 98, 65]),
     7: new Student('Ivan', [76, 89, 78, 98, 98, 99, 89, 96]),
+
+
+  },
+  get aGradeStudents() {
+    return Object.values(this.students).reduce((acc, {name, averageGrade}) => {
+      if (averageGrade >= 90 && averageGrade <= 100) {
+        return acc + name;
+      }
+      return acc;
+    }, [])
+  },
+
+  get bGradeStudents() {
+    return Object.values(this.students).reduce((acc, {name, averageGrade}) => {
+      if (averageGrade >= 75 && averageGrade <= 89) {
+        return acc + name;
+      }
+      return acc;
+    }, [])
+  },
+
+  get cGradeStudents() {
+    return Object.values(this.students).reduce((acc, {name, averageGrade}) => {
+      if (averageGrade >= 60 && averageGrade <= 74) {
+
+        return acc + name;
+      }
+      return acc;
+    },[])
+  },
+
+  get dGradeStudents() {
+    return Object.values(this.students).reduce((acc, {name, averageGrade}) => {
+      if (averageGrade >= 0 && averageGrade <= 59) {
+        return acc + name;
+      }
+      return acc;
+    }, '').split(',');
   },
 };
+
+
+
+
+
+
