@@ -56,7 +56,7 @@ export const school = {
         return acc + name;
       }
       return acc;
-    }, '').split(',');
+    }, '');
   },
 };
 
