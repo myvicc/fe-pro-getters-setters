@@ -27,7 +27,7 @@ export const school = {
         return [...acc, name];
       }
       return acc;
-    }, []).join(" ,");
+    }, []).join(", ");
   },
 
   get bGradeStudents() {
@@ -36,7 +36,7 @@ export const school = {
         return [...acc, name];
       }
       return acc;
-    }, []).join(" ,");
+    }, []).join(", ");
   },
 
   get cGradeStudents() {
@@ -46,7 +46,7 @@ export const school = {
         return [...acc, name];
       }
       return acc;
-    },[]).join(" ,");
+    },[]).join(", ");
   },
 
   get dGradeStudents() {
@@ -55,7 +55,7 @@ export const school = {
         return [...acc, name];
       }
       return acc;
-    },[]).join(" ,");
+    },[]).join(", ");
   },
 };
 
